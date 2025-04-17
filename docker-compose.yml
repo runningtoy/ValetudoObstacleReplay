@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  valetudo-obstacle:
+    build: .
+    container_name: valetudo-obstacle
+    volumes:
+      - /valetudo:/output
+    restart: unless-stopped
